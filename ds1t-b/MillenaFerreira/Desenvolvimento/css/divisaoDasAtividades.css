@@ -1,0 +1,95 @@
+.divisaoDasAtividades{ 
+    padding-top: 5%;
+    padding-left: 5%;
+    display: flex;
+    align-items: center;
+    height: 60vh;
+}
+
+.conteudo {
+    display: flex;
+    width: 30%;
+    height: 100%;
+    scroll-snap-type: x mandatory;
+    scroll-padding: 25px;
+    column-gap: 20px;
+}
+
+.card {
+    flex: 0 0 100%;
+    padding: 30px;
+    scroll-snap-align: start;
+    border-radius: 30px;
+    text-align: center;
+    height: 120px;
+    overflow: hidden;
+    transition: all 1s;
+    cursor: pointer; 
+}
+
+.card h1 {
+    margin-bottom: 4rem;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+
+.card:nth-child(1) {
+    background: linear-gradient(-229deg, #00DBDE, #FC00FF);
+}
+
+.card:nth-child(2) {
+    background: linear-gradient(-229deg, #0093E9, #80D0C7);
+}
+
+.card:nth-child(3) {
+    background: linear-gradient(-229deg, #50d990, #d4d054);
+}
+
+ .card:hover{
+    height: 550px;
+} 
+
+@media(max-width: 999px){
+    .divisaoDasAtividades{
+        height: auto;
+        padding-top: 10%;
+    }
+    .conteudo{
+        height: 80%;
+    }
+    
+}
+@media(max-width: 720px){
+    .card:hover{
+        height: 800px;
+    } 
+    .card{
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 20px;
+    }
+    .card h1{
+        font-size: 1.75rem;
+    }
+}
+@media(max-width: 600px){
+
+    .divisaoDasAtividades{
+        height: auto;
+        padding-top: 20%;
+    }
+
+    .conteudo{
+        display: flex;
+        flex-direction: column;
+        width: 95%;
+        gap: 10%;
+    }
+    .conteudo article {
+        margin-top: 10%;
+    }
+    
+}
